@@ -10,7 +10,7 @@ public class RemoverLista {
 		Connection con = fac.recuperarConexao();
 		
 		Statement st = con.createStatement();
-		st.execute("DELETE FROM PRODUTO WHERE ID > 2");
+		st.execute("DELETE FROM PRODUTO WHERE ID > 4");
 		
 		Integer linhasAlteradas = st.getUpdateCount();
 		
